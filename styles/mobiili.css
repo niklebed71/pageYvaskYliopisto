@@ -1,0 +1,261 @@
+﻿/* Tänne mobiililateen ulkoasumuotoilu */
+body {
+	background-color: white;
+	color: black;
+	font-family: Arial, Helvetica, sans-serif;
+	position: relative;
+	width: 100%;
+}
+
+.content {
+	box-sizing: border-box;
+	min-height: 100%;
+	padding-bottom: 3em;
+	flex: 1 1 auto;
+}
+
+.navbar {
+	border-style: solid;
+	border-width: thin;
+	border-color: black;
+	width: 100%;
+	background-color: rgb(200, 145, 170);
+	float: none;
+}
+
+.navbar a {
+	color: blue;
+	font-size: 150%;
+}
+
+a:hover {
+	color: red;
+}
+
+.kuva {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+div.img {
+	align-self: center;
+	max-width: 100%;
+}
+
+div.etusivukuva {
+	font-size: 200%;
+	font-weight: 800;
+	align-self: center;
+}
+
+div.video {
+	text-align: center;
+	min-width: 100%;
+	min-height: 100%;
+	display: block;
+	flex-grow: 1;
+}
+.video a {
+	display: block;
+	margin: 1em 0 0 0;
+}
+
+footer {
+	height: 8em;
+	margin-top: -1em;
+	background-color: rgb(200, 145, 170);
+}
+
+footer ul li {
+	display: inline;
+	font-size: 100em;
+}
+
+.itkp {
+	padding: 0px 0px 0px 3em;
+}
+
+.nik {
+	padding: 0em 3em;
+}
+
+.footer_row {
+	align-items: center;
+}
+
+.footer_text {
+	font-size: 2em;
+	display: inline;
+}
+
+.vittaus {
+	text-decoration: none;
+}
+
+table {
+	color: black;
+	border: 0.2em solid red;
+	border-collapse: collapse;
+	height: 50em;
+	width: 50em;
+}
+
+tr,
+td,
+th {
+	border: 0.15em dotted red;
+	font-size: 1.5em;
+}
+
+.text {
+	padding: 0.6em 0;
+}
+
+.flex {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.flex div {
+	float: left;
+	text-align: center;
+	clear: right;
+	margin-top: 1em;
+	position: relative;
+}
+
+.flex div p {
+	height: 1.5em;
+	text-align: center;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	font-size: 1em;
+}
+
+.lomake {
+	width: 100%;
+}
+fieldset {
+	width: 100%;
+}
+
+.viestinosa {
+	width: 100%;
+}
+
+input,
+option,
+textarea {
+	font-family: "Courier New", Courier, monospace;
+}
+label {
+	display: block;
+	width: 68%;
+	float: left;
+	clear: both;
+}
+
+.tiedot {
+	width: 100%;
+}
+.sukupuoli {
+	width: 100%;
+}
+.syntymaaikaa {
+	width: 100%;
+}
+.block {
+	display: flex;
+	width: 100%;
+}
+.blockrow {
+	display: flex;
+	margin-left: 15px;
+	align-items: center;
+	flex-direction: column;
+	flex-grow: 1;
+}
+
+.lisapalvelu {
+	width: 100%;
+	margin-top: 1em;
+}
+.lisapalvelu p {
+	width: 100%;
+}
+.button {
+	max-width: 20%;
+}
+
+.header-burger {
+	display: block;
+	position: relative;
+	left: 90%;
+	top: 30px;
+	width: 60px;
+	height: 50px;
+}
+.header-burger:before,
+.header-burger:after {
+	content: "";
+	background-color: blue;
+	position: absolute;
+	width: 100%;
+	height: 4px;
+	transition: all 0.7s ease 0s; 
+}
+.header-burger:before {
+	top: 0;
+}
+.header-burger:after {
+	bottom: 0;
+}
+
+.header-burger.active:before {
+	transform: rotate(45deg);
+	top: 22px;
+}
+.header-burger.active:after {
+	transform: rotate(-45deg);
+	bottom: 22px;
+}
+.header-burger span {
+	background-color: blue;
+	position: absolute;
+	left: 0px;
+	top: 24px;
+	width: 100%;
+	height: 4px;
+	transition: all 0.3s ease 0s;
+}
+.header-burger.active span {
+	transform: scale(0);
+} 
+
+.navbartop {
+	position: fixed;
+	top: -100%; 
+	left: 0;
+	width: 100%;
+	height: 16%;
+	padding: 0px 0 0 0;
+	transition: all 0.7s ease 0s;
+	overflow: auto;
+}
+.navbartop ul {
+	display: flex;
+	flex-direction: column;
+	text-align: right;
+	padding-right: 50px;
+}
+.navbartop.active {
+	top: 0%;
+	position: relative;
+	padding: 0px 0 0px 0;
+	height: 25%;
+	color: blue;
+	font-size: 145%;
+	font-family: Arial, Helvetica, sans-serif;
+}
